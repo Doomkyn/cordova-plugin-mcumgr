@@ -32,6 +32,12 @@ public class McumgrPlugin extends CordovaPlugin {
             performDfu(deviceAddress, filePath, callbackContext);
             return true;
         }
+
+        if (action.equals("testLog")) {
+            android.util.Log.d("McumgrPlugin", "Test log from Mcumgr Cordova Plugin");
+            callbackContext.success("Logged from plugin");
+            return true;
+        }
         return false;
     }
 
