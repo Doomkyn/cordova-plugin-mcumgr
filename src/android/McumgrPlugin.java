@@ -1,4 +1,4 @@
-package com.example.mcumgr;
+package it.doomkyn.mcumgr;
 
 import org.apache.cordova.*;
 import org.json.JSONArray;
@@ -8,8 +8,8 @@ import org.json.JSONObject;
 import android.util.Log;
 import android.content.Context;
 
-import io.runtime.mcumgr.McuMgrBleTransport;
-import io.runtime.mcumgr.McuMgrDfu;
+//import io.runtime.mcumgr.McuMgrBleTransport;
+//import io.runtime.mcumgr.McuMgrDfu;
 
 public class McumgrPlugin extends CordovaPlugin {
 
