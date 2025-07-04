@@ -24,6 +24,7 @@ public class McumgrPlugin extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+        /* 
         if ("performDfu".equals(action)) {
             JSONObject params = args.getJSONObject(0);
             String deviceAddress = params.getString("deviceAddress");
@@ -32,7 +33,7 @@ public class McumgrPlugin extends CordovaPlugin {
             performDfu(deviceAddress, filePath, callbackContext);
             return true;
         }
-
+        */
         if (action.equals("testLog")) {
             android.util.Log.d("McumgrPlugin", "Test log from Mcumgr Cordova Plugin");
             callbackContext.success("Logged from plugin");
@@ -40,7 +41,7 @@ public class McumgrPlugin extends CordovaPlugin {
         }
         return false;
     }
-
+    /*
     private void performDfu(String deviceAddress, String filePath, CallbackContext callbackContext) {
         cordova.getThreadPool().execute(() -> {
             try {
@@ -74,4 +75,5 @@ public class McumgrPlugin extends CordovaPlugin {
             }
         });
     }
+    */
 }
