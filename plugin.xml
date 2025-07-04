@@ -1,0 +1,12 @@
+<plugin id="cordova-plugin-mcumgr" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>Mcumgr</name>
+    <js-module src="www/mcumgr.js" name="Mcumgr">
+        <clobbers target="mcumgr" />
+    </js-module>
+
+    <platform name="android">
+        <source-file src="src/android/McumgrPlugin.java" target-dir="src/com/example/mcumgr" />
+        <framework src="com.github.JuulLabs-OSS:mcumgr-android:0.11.1" />
+        <framework src="com.google.code.gson:gson:2.8.6" />
+    </platform>
+</plugin>

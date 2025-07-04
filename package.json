@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-mcumgr",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for mcumgr (DFU and device management)",
+  "cordova": {
+    "id": "cordova-plugin-mcumgr",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "mcumgr",
+    "dfu",
+    "firmware",
+    "update"
+  ],
+  "author": "Kevin Bonazzi <bonazzi.kevin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/cordova-plugin-mcumgr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/cordova-plugin-mcumgr/issues"
+  },
+  "homepage": "https://github.com/yourusername/cordova-plugin-mcumgr",
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-ios": "^6.2.0"
+  }
+}
