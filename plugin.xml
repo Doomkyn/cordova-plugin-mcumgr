@@ -6,5 +6,10 @@
 
     <platform name="android">
         <source-file src="src/android/McumgrPlugin.java" target-dir="src/it/doomkyn/mcumgr" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="McumgrPlugin">
+                <param name="android-package" value="it.doomkyn.mcumgr.McumgrPlugin" />
+            </feature>
+        </config-file>
     </platform>
 </plugin>
